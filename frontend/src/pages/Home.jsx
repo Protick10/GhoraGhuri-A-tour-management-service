@@ -8,6 +8,8 @@ import heroVideo from "../assets/images/hero-video.mp4";
 import Subtitle from "../shared/Subtitle";
 import worldImg from "../assets/images/world.png";
 
+import SeachBar from "../shared/SeachBar";
+
 const Home = () => {
   return (
     <>
@@ -38,13 +40,13 @@ const Home = () => {
             </Col>
 
             <Col lg="2">
-              <div className="hero__img-box mt-2">
+              <div className="hero__img-box">
                 <img src={heroImg} alt="" />
               </div>
             </Col>
             <Col lg="2">
               <div className="hero__img-box mt-4">
-                <video src={heroVideo} alt="" controls />
+                <video src={heroVideo} alt="" controls={true} autoPlay={true} loop={true}/>
               </div>
             </Col>
             <Col lg="2">
@@ -53,6 +55,7 @@ const Home = () => {
               </div>
             </Col>
 
+            <SeachBar />
           </Row>
         </Container>
       </section>

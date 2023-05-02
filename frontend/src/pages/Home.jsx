@@ -9,6 +9,7 @@ import Subtitle from "../shared/Subtitle";
 import worldImg from "../assets/images/world.png";
 
 import SeachBar from "../shared/SeachBar";
+import ServiceList from "../services/ServiceList";
 
 const Home = () => {
   return (
@@ -61,6 +62,20 @@ const Home = () => {
       </section>
 
       {/*==========hero-section end==========*/}
+
+        {/*==========about-section start==========*/}
+      <section className="about__section">
+        <Container>
+          <Row>
+            <Col lg='3'>
+              <h5 className="services__subtitle">We we serve</h5>
+                <h2 className="services__title">Our Services</h2>
+            </Col>
+            <ServiceList />
+          </Row>
+        </Container>
+      </section>
+
     </>
   );
 };

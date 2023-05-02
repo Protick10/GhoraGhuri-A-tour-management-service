@@ -10,6 +10,7 @@ import worldImg from "../assets/images/world.png";
 
 import SeachBar from "../shared/SeachBar";
 import ServiceList from "../services/ServiceList";
+import FeaturedTourList from "../components/Featured-tours/FeaturedTourList";
 
 const Home = () => {
   return (
@@ -47,7 +48,13 @@ const Home = () => {
             </Col>
             <Col lg="2">
               <div className="hero__img-box mt-4">
-                <video src={heroVideo} alt="" controls={true} autoPlay={true} loop={true}/>
+                <video
+                  src={heroVideo}
+                  alt=""
+                  controls={true}
+                  autoPlay={true}
+                  loop={true}
+                />
               </div>
             </Col>
             <Col lg="2">
@@ -63,19 +70,37 @@ const Home = () => {
 
       {/*==========hero-section end==========*/}
 
-        {/*==========about-section start==========*/}
+      {/*==========about-section start==========*/}
       <section className="about__section">
         <Container>
           <Row>
-            <Col lg='3'>
+            <Col lg="3">
               <h5 className="services__subtitle">We we serve</h5>
-                <h2 className="services__title">Our Services</h2>
+              <h2 className="services__title">Our Services</h2>
             </Col>
             <ServiceList />
           </Row>
         </Container>
       </section>
 
+      {/*==========about-section end==========*/}
+
+
+      {/*==========Featured Tour Section Start==========*/}
+
+      <section className="featured__tour">
+        <Container>
+          <Row>
+            <Col lg="12" className="mb-5">
+              <Subtitle subtitle={"Explore"} />
+              <h2 className="featured__tour-title">Our Featured Tour</h2>
+            </Col>
+            <FeaturedTourList />
+          </Row>
+        </Container>
+      </section>
+
+        {/*==========Featured Tour Section End==========*/}
     </>
   );
 };

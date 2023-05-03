@@ -7,6 +7,7 @@ import heroImg02 from "../assets/images/hero-img02.jpg";
 import heroVideo from "../assets/images/hero-video.mp4";
 import Subtitle from "../shared/Subtitle";
 import worldImg from "../assets/images/world.png";
+import experienceImg from "../assets/images/experience.png";
 
 import SeachBar from "../shared/SeachBar";
 import ServiceList from "../services/ServiceList";
@@ -101,6 +102,43 @@ const Home = () => {
       </section>
 
         {/*==========Featured Tour Section End==========*/}
+
+      {/*==========Experience Section Start==========*/}
+
+      <section>
+        <Container>
+          <Row>
+            <Col lg="6">
+              <div className="experience__content">
+                <Subtitle subtitle={"Experience"} />
+                <h2 className="experience__title">With our all experience <br /> we will serve you</h2>
+                <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus, blanditiis ea enim ipsa iusto labore, mollitia nemo odit optio pariatur porro quibusdam quod tempore. Dicta labore necessitatibus quo suscipit voluptatum.</p>
+              </div>
+              <div className="counter__wrapper d-flex align-items-center gap-5">
+                <div className="counter__box">
+                  <span>10k+</span>
+                  <h6>Successfull Trip</h6>
+                </div>
+                <div className="counter__box">
+                  <span>2k+</span>
+                  <h6>Regular Client</h6>
+                </div>
+                <div className="counter__box">
+                  <span>15</span>
+                  <h6>Years of Experience</h6>
+                </div>
+              </div>
+            </Col>
+            <Col lg="6">
+              <div className="experience__img">
+                <img src={experienceImg} alt="" />
+              </div>
+            </Col>
+          </Row>
+        </Container>
+      </section>
+
+      {/*==========Experience Section End==========*/}
     </>
   );
 };

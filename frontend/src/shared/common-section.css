@@ -3,7 +3,7 @@
 .common_section{
 
     background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),
-    url("E:\9th SEMESTER(SPRING-2023)\CSE-412\GhoraGhuri-A-tour-management-service-main\frontend\src\tour.jpg") no-repeat center center;
+    url("../assets/images/tour.jpg") no-repeat center center;
 
     background-size: cover;
     height: 300px;

@@ -3,7 +3,6 @@ import "./footer.css";
 
 import { Col, Container, Row, ListGroup, ListGroupItem } from "reactstrap";
 import { Link } from "react-router-dom";
-import testimonials from "../Testimonial/Testimonials";
 import logo from "../../assets/images/logo.png";
 
 const quick__links = [

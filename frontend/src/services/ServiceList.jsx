@@ -10,7 +10,7 @@ const servicesData = [
   {
     imgUrl: weatherImg,
     title: "Calculate Weather",
-    desc: "Consectetur adipisicing elit. A accusamus strum obcaecati, oe sint sunt suscipit veniam.",
+    desc: "Consectetur adipisicing elit. A accusamus strum obcaecati.",
   },
   {
     imgUrl: guideImg,

@@ -13,6 +13,8 @@ import SeachBar from "../shared/SeachBar";
 import ServiceList from "../services/ServiceList";
 import FeaturedTourList from "../components/Featured-tours/FeaturedTourList";
 import MasonryImagesGallery from "../components/Image-gallery/MasonryImagesGallery";
+import Testimonials from "../components/Testimonial/Testimonials";
+import Newsletter from "../shared/Newsletter";
 
 const Home = () => {
   return (
@@ -87,7 +89,6 @@ const Home = () => {
 
       {/*==========about-section end==========*/}
 
-
       {/*==========Featured Tour Section Start==========*/}
 
       <section className="featured__tour">
@@ -102,7 +103,7 @@ const Home = () => {
         </Container>
       </section>
 
-        {/*==========Featured Tour Section End==========*/}
+      {/*==========Featured Tour Section End==========*/}
 
       {/*==========Experience Section Start==========*/}
 
@@ -112,8 +113,16 @@ const Home = () => {
             <Col lg="6">
               <div className="experience__content">
                 <Subtitle subtitle={"Experience"} />
-                <h2 className="experience__title">With our all experience <br /> we will serve you</h2>
-                <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus, blanditiis ea enim ipsa iusto labore, mollitia nemo odit optio pariatur porro quibusdam quod tempore. Dicta labore necessitatibus quo suscipit voluptatum.</p>
+                <h2 className="experience__title">
+                  With our all experience <br /> we will serve you
+                </h2>
+                <p>
+                  {" "}
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Accusamus, blanditiis ea enim ipsa iusto labore, mollitia nemo
+                  odit optio pariatur porro quibusdam quod tempore. Dicta labore
+                  necessitatibus quo suscipit voluptatum.
+                </p>
               </div>
               <div className="counter__wrapper d-flex align-items-center gap-5">
                 <div className="counter__box">
@@ -141,24 +150,51 @@ const Home = () => {
 
       {/*==========Experience Section End==========*/}
 
-
       {/*==========Gallery Section Start==========*/}
 
       <section>
         <Container>
           <Row>
             <Col lg="12">
-                <Subtitle subtitle={"Gallery"} />
-                <h2 className="gallery__title">Visit our customers tour Gallery</h2>
+              <Subtitle subtitle={"Gallery"} />
+              <h2 className="gallery__title">
+                Visit our customers tour Gallery
+              </h2>
             </Col>
             <Col lg="12">
-                <MasonryImagesGallery />
+              <MasonryImagesGallery />
             </Col>
           </Row>
         </Container>
       </section>
 
       {/*==========Gallery Section End==========*/}
+
+      {/*==========Testimonial Section Start==========*/}
+      <section>
+        <Container>
+          <Row>
+            <Col lg="12">
+              <Subtitle subtitle={"Fans Love"} />
+              <h2 className="testimonial__title">What our fans say about us</h2>
+            </Col>
+            <Col lg="12">
+              <Testimonials />
+            </Col>
+          </Row>
+        </Container>
+      </section>
+
+      {/*==========Testimonial Section End==========*/}
+
+      {/*==========Newsletter Section Start==========*/}
+
+      <Newsletter />
+
+      {/*==========Newsletter Section End==========*/}
+
+
+
     </>
   );
 };

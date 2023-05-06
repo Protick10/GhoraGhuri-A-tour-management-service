@@ -11,3 +11,16 @@
     font-size: 3rem;
     font-family: var(--subtitle-font-name);
 }
+
+.thank_you button{
+
+    background-color:rgb(250, 169, 53);
+
+
+   
+}
+
+.thank_you button link{
+    color: rgb(238, 235, 230)  ;
+    text-decoration: none;
+}

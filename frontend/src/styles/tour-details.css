@@ -94,6 +94,7 @@
 .review_input button{
     fill: var(--secondary-color);
     color: rgb(211, 148, 54);
+  
 }
 
 .review_item{

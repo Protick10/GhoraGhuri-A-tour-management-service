@@ -92,5 +92,7 @@
 
 }
 .booking_bottom Button{
-    color: var(--secondary-color);
+    /* color: var(--secondary-color); */
+    background-color: rgb(250, 169, 53);
+    
 }

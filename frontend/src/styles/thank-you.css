@@ -15,12 +15,17 @@
 .thank_you button{
 
     background-color:rgb(250, 169, 53);
+    text-decoration: none;
 
 
    
 }
 
-.thank_you button link{
+.thank_you Button Link{
     color: rgb(238, 235, 230)  ;
+    text-decoration: none;
+}
+
+Link{
     text-decoration: none;
 }

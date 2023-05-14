@@ -37,7 +37,7 @@ const Booking = ({tour, avgRating}) => {
      <div className="booking">
         <div className='booking_top d-flex align-items-center
         justify-content-between'>
-            <h3> tk{price} <span>/per person</span></h3>
+            <h3> ৳{price} <span>/per person</span></h3>
             <span className="tour__rating d-flex align-items-center ">
                    <i class="ri-star-s-fill"  ></i>
                   {avgRating === 0 ? null : avgRating} ({reviews ?. length})
@@ -75,16 +75,16 @@ const Booking = ({tour, avgRating}) => {
         <div className="booking_bottom">
             <ListGroup>
             <ListGroupItem className='border-0 px-0'>
-                <h5 className='d-flex align-items-center gap-1'>tk{price} <i class="ri-close-line"></i> 1 person</h5>
-                <span> tk {price}</span>
+                <h5 className='d-flex align-items-center gap-1'>৳{price} <i class="ri-close-line"></i> 1 person</h5>
+                <span> ৳ {price}</span>
             </ListGroupItem>
             <ListGroupItem className='border-0 px-0'>
                 <h5> Service Charge </h5>
-                <span> tk {serviceFee}</span>
+                <span> ৳ {serviceFee}</span>
             </ListGroupItem>
             <ListGroupItem className='border-0 px-0 total'>
                 <h5> Total </h5>
-                <span> tk {totalAmount}</span>
+                <span> ৳ {totalAmount}</span>
             </ListGroupItem>
             </ListGroup>
          <Button className='btn primary_btn w-100 mt-4' onClick={handleClick}>

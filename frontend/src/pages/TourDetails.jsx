@@ -74,7 +74,7 @@ const TourDetails = () => {
 
                             <div className="tour_extra-details">
                                 <span> <i class="ri-map-pin-line"></i> {city}  </span>
-                                <span> <i class="ri-currency-fill"></i> tk{price} / per person  </span>
+                                <span> <i class="ri-currency-fill"></i> ৳{price} / per person  </span>
                                 <span> <i class="ri-map-pin-time-line"></i>  {distance} k/m  </span>
                                 <span> <i class="ri-group-line"></i> {maxGroupSize} people
                                  </span>

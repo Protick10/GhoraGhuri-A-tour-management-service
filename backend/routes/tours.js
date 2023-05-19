@@ -16,13 +16,13 @@ router.delete('/:id', deleteTour);
 // get single tour 
 router.get('/:id', getSingleTour);
 
-// get all tour 
+// get all tours
 router.get('/', getAllTour);
 
 // get tour by search 
 router.get("/search/getTourBySearch",getTourBySearch);
 
-// get Featured tour 
+// get Featured tours 
 router.get("/search/getFeaturedTours", getFeaturedTour);
 
 // get Tour count

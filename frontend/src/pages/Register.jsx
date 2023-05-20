@@ -31,16 +31,16 @@ const Register = () => {
             const res = await fetch(`${BASE_URL}/auth/register`,{
                 method:'post',
                 headers:{
-                    'content-type' : 'application/json'
+                    'content-type' : 'application/json',
                 },
-                body: JSON.stringify(credentials)
-            })
-            const result = await res.json()
+                body: JSON.stringify(credentials),
+            });
+            const result = await res.json();
 
-            if(!res.ok) alert(result.message)
+            if(!res.ok) alert(result.message);
 
-            dispatch({type:'REGISTER_SUCCESS'})
-            navigate('/login')
+            dispatch({type:'REGISTER_SUCCESS'});
+            navigate('/login');
         } catch (err) {
             alert(err.message);
         }

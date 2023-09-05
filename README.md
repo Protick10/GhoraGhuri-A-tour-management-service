@@ -39,9 +39,7 @@ We welcome contributions from the community to enhance our application. If you w
 3. Implement your feature or make the necessary changes.
 4. Commit and push your changes: `git commit -m "Add your commit message"` and `git push origin feature/your-feature-name`
 5. Create a pull request, describing your changes and their benefits.
+ 
 
-## Contact
-
-If you have any questions, suggestions, or feedback, please feel free to contact our support team at sabbir.abirs99@gmail.com. We value your input and are committed to improving our services based on customer feedback.
-
+ 
 
